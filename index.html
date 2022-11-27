@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Stone Paper Scissor Game</title>
+		<link rel="stylesheet" href="RPS_style.css" />
+	</head>
+	<body>
+		<!-- Greeting Sentence -->
+		<div class="" id="header">
+			<div class="greeting">
+				<p>WelCome To the Game</p>
+			</div>
+		</div>
+		<!-- Main Game Box -->
+		<div class="gameContainer">
+			<div class="box">
+				<div class="point_container">
+					<!-- Points table -->
+					<p id="P_msg">Points Table</p>
+					<hr id="line" />
+					<div id="point">
+						<p>User</p>
+						<p id="score">0 : 0</p>
+						<p>Bot</p>
+					</div>
+				</div>
+				<hr id="line" />
+				<!-- <button id="btn">Click me</button> -->
+				<!-- Display for User and Bot's Move -->
+				<div class="move">
+					<p id="p_move">Your Move :</p>
+					<p id="c_move">Bot's Move :</p>
+				</div>
+				<!-- Msg after Both players make their Moves -->
+				<div class="upperMsg">
+					<p id="upperMsg">Let's Start the Game !</p>
+				</div>
+				<!-- Images cum Buttons for click event -->
+				<div class="images">
+					<img
+						class="rpsButton"
+						id="rock"
+						src="Rock.png"
+						value="Rock"
+						onclick="main()"
+					/>
+					<img
+						class="rpsButton"
+						id="paper"
+						src="paper.png"
+						value="Paper"
+						onclick="main()"
+					/>
+					<img
+						class="rpsButton"
+						id="scissor"
+						src="scissor.png"
+						value="Scissor"
+						onclick="main()"
+					/>
+				</div>
+				<!-- Msg below Images -->
+				<div class="msg">
+					<p>Make Your Move</p>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>Copyright ©️ RahulB.com</p>
+		</div>
+		<script src="RPS.js"></script>
+	</body>
+</html>
